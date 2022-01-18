@@ -1,4 +1,5 @@
 provider "google"{
+	credentials="/home/raghavjaggu_gmail_com/gcp-key.json"
 	project="terraform-336010"
 	region="us-central1"
 }
