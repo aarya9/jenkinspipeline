@@ -12,9 +12,6 @@ resource "google_compute_instance" "dev"{
 	name         = "devserver"
   	machine_type = "f1-micro"
   	zone         = "us-central1-a"
-	admin_ssh_key {
-	ssh-keys = var.admin":${file("~/id_rsa_gcp.pub")}"
-	}
 	boot_disk {
 		initialize_params {
 			image = "centos-cloud/centos-7"
