@@ -5,11 +5,11 @@ provider "google" {
 }
 
 resource "google_compute_network" "test_vpc" {
-  name = "terraform-network-sample-one"
+  name = "terraform-network-sample-two"
 }
 
 resource "google_compute_instance" "dev" {
-  name         = "devserver-one"
+  name         = "devserver-two"
   machine_type = "f1-micro"
   zone         = "us-central1-a"
   boot_disk {
@@ -23,4 +23,5 @@ resource "google_compute_instance" "dev" {
     access_config {
     }
   }
+
 }
